@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "Samurai";
+    src: url(midias/Fonts/SINGLE\ FIGHTER.otf) format(woff2), url(midias/Fonts/SINGLE\ FIGHTER.otf) format(woff);    
+}
+body{
+    background-image: url(midias/imagens/walpapermesmo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+h1{
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 5px hsl(0, 90%, 44%),-3px -3px 5px hsl(0, 90%, 44%);
+    color: wheat;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Samurai;
+}
+h1 span:hover{
+    text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+    color: rgba(252, 56, 56, 0.966);
+    cursor:default;
+}
+main{
+    margin-left: 10px;
+    color: wheat;
+}
+h3{
+    display: flex;
+    position: fixed;
+    bottom: 45%;
+    font-family: Samurai;
+    text-shadow: 3px 3px 5px hsl(0, 90%, 44%),-3px -3px 5px hsl(0, 90%, 44%);
+}
+h3 span:hover{
+    text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+    color: rgba(252, 56, 56, 0.966);
+}
+p{
+    text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+    position: absolute;
+    bottom: 10%;
+    font-size: 20px;
+}.picA{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 100px;
+}
+.ovA{
+    background-color: hsl(0, 78%, 41%);
+    border: 2px solid #000000;
+    border-radius: 0px;
+    letter-spacing: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: samurai;
+    font-weight: 900;
+    font-size: 20px; 
+}
+a{
+    color: wheat;
+    text-decoration: none; 
+}
+.ovA:hover{
+    background-color: #ce1515;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.ovB{
+    height: 90px;
+    background-color: hsl(0, 78%, 41%);
+    border: 2px solid #000000;
+    border-radius: 0px;   
+    letter-spacing: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: samurai;
+    font-weight: 900;
+    font-size: 20px;
+}
+.ovB:hover{
+    background-color: #ce1515;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.links:hover{
+    color: rgba(252, 56, 56, 0.966);
+    text-shadow: 3px 3px 5px hsl(59, 100%, 51%);
+}
+.navbar{
+    margin: 0px;
+}
+.navbar a{
+    font-family: Samurai;
+    text-shadow: 3px 3px 5px hsl(0, 90%, 44%);
+    color: wheat;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    text-shadow: 8px 8px 4px hwb(0 0% 100%);
+    color: rgb(248, 39, 39);
+    size: 13px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar li{
+    float: left;
+}
+/*  
+@media screen and (max-width: 1900px){
+    .button-begin{ 
+    display: flex;
+    position: fixed;
+    left: 3%;
+    bottom: 30%;
+    width: 600px;
+    text-align: center;
+    padding: 30px 80px;
+    background-color: hsl(0, 78%, 41%);
+    border: 2px solid #000000;
+    border-radius: 0px;
+    color: hsl(39, 77%, 83%);
+    letter-spacing: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: samurai;
+    font-weight: 900;
+    font-size: 30px;
+    }
+    p{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        position: fixed;
+        width: 900px;
+        bottom: 30%;
+        left: 40%;
+        font-size: 20px;
+    }
+    h3{
+        display: flex;
+        position: fixed;
+        bottom: 45%;
+        left: 13%;
+        font-family: Samurai;
+        text-shadow: 3px 3px 5px hsl(0, 90%, 44%),-3px -3px 5px hsl(0, 90%, 44%);
+    }
+    h3 span:hover{
+        text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+        color: rgba(252, 56, 56, 0.966);
+    }
+
+}
+@media screen and (max-width: 1639px) {
+    .button-begin{ 
+        display: flex;
+        position: fixed;
+        left: 30%;
+        bottom: 30%;
+        width: 600px;
+        text-align: center;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .button-begin2{
+        display: flex;
+        position: fixed;
+        left: 30%;
+        bottom: 55%;
+        width: 600px;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    h3{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        position: fixed;
+        width: 900px;
+        bottom: 70%;
+        left: 40%;
+        font-size: 20px;
+    }
+    h3 span:hover{
+        text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+        color: rgba(252, 56, 56, 0.966);
+    }
+    p{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        bottom: 7%;
+        left: 20%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1152px) {
+    .button-begin{ 
+        display: flex;
+        position: fixed;
+        left: 10%;
+        bottom: 30%;
+        width: 300px;
+        text-align: center;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 15px;
+    }
+    .button-begin2{
+        display: flex;
+        position: fixed;
+        left: 10%;
+        bottom: 47%;
+        width: 300px;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 15px;
+    }
+    h3{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        position: fixed;
+        bottom: 67%;
+        left: 10%;
+        font-size: 20px;
+    }
+    h3 span:hover{
+        text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+        color: rgba(252, 56, 56, 0.966);
+    }
+    p{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        bottom: 30%;
+        left: 45%;
+        font-size: 20px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .button-begin{ 
+        display: flex;
+        position: fixed;
+        left: 10%;
+        bottom: 38%;
+        width: 400px;
+        text-align: center;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 14px;
+    }
+    .button-begin2{
+        display: flex;
+        position: fixed;
+        left: 10%;
+        bottom: 53%;
+        width: 400px;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 14px;
+    }
+    h3{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        position: fixed;
+        bottom: 65%;
+        left: 18%;
+        font-size: 20px;
+    }
+    h3 span:hover{
+        text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+        color: rgba(252, 56, 56, 0.966);
+    }
+    p{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        bottom: 3%;
+        left: 4%;
+        font-size: 20px;
+        width: 450px;
+    }
+}
+@media screen and (max-height: 790px) {
+    .button-begin{ 
+        display: flex;
+        position: fixed;
+        left: 4%;
+        bottom: 38%;
+        width: 200px 30px;
+        text-align: center;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 10px;
+    }
+    .button-begin2{
+        display: flex;
+        position: fixed;
+        left: 4%;
+        bottom: 53%;
+        width: 200px 30px;
+        padding: 30px 80px;
+        background-color: hsl(0, 78%, 41%);
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: hsl(39, 77%, 83%);
+        letter-spacing: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-family: samurai;
+        font-weight: 900;
+        font-size: 10px;
+    }
+    h3{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        position: fixed;
+        bottom: 65%;
+        left: 18%;
+        font-size: 20px;
+    }
+    h3 span:hover{
+        text-shadow:3px 3px 5px hsl(60, 100%, 1%) ,3px -3px 5px hwb(169 8% 59% / 0.912);
+        color: rgba(252, 56, 56, 0.966);
+    }
+    p{
+        text-shadow: 3px 3px 5px hsl(60, 100%, 1%);
+        bottom: 11%;
+        left: 3%;
+        font-size: 13px;
+        width: 400px;
+    }
+}  */
